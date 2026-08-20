@@ -1,0 +1,157 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000000;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 10%;
+    box-sizing: border-box;
+
+    background: #000000;
+    z-index: 1000;
+}
+
+.logo {
+    color: #44bc2f;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: #44bc2f;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.home-text {
+    max-width: 60%;
+}
+
+.home-text a{
+    color: #44bc2f;
+}
+
+.home-text h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.home-text h2 {
+    margin-top: -20px;
+    color: #44bc2f;
+}
+
+.home-text p {
+    color: #cbd5e1;
+    font-size: 20px;
+}
+
+img {
+    height: 60%;
+    width: 30%;
+}
+
+#about, #skills{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+#about h1, #skills h1, #contact h1{
+    color: #44bc2f;
+    font-size: 50px;
+    margin-top: -300px;
+}
+
+#about p, #contact p {
+    color: #cbd5e1;
+    font-size: 20px;
+    margin: 0;
+}
+
+#contact{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+
+
+
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #44bc2f;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #080808;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    border-color: #056627;
+    transform: translateY(-5px);
+}
+
+.skill-box a{
+    color: orange;
+    font-size: 20px;
+}
+
+.skill-box p{
+    color: lightblue;
+    font-size: 20px;
+}
