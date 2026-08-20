@@ -118,10 +118,6 @@ img {
     padding: 0 10%;
 }
 
-
-
-
-
 .skills-container {
     display: flex;
     gap: 20px;
@@ -154,4 +150,77 @@ img {
 .skill-box p{
     color: lightblue;
     font-size: 20px;
+}
+
+/* FOR MObILE FRAME */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 10px 5%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    #home {
+        height: auto;
+        min-height: 100vh;
+
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        padding: 120px 5% 50px;
+    }
+
+    .home-text {
+        padding: 20px 0;
+    }
+
+    .home-text h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .home-text p {
+        font-size: 16px;
+    }
+
+    #home img {
+        width: 50%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #about,
+    #skills,
+    #projects,
+    #contact {
+        padding: 60px 5%;
+    }
+
+
+    .skills-container {
+        justify-content: center;
+    }
+
+    .skill-box {
+        width: 100px;
+        height: 100px;
+    }
+
 }
